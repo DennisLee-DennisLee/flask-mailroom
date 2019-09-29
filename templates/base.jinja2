@@ -1,8 +1,12 @@
 <html>
 <head>
-<title>Mailroom</title>
+<title>Dennis's Mailroom</title>
 </head>
 <body>
+	<nav>
+		<a id="list" href="{{ url_for('all') }}">Show donations</a> |
+		<a id="create" href="{{ url_for('donate') }}">Enter donations</a>
+	</nav>
 	<h1>Donations</h1>
 	<h2>{% block subtitle %} {% endblock subtitle %}</h2>
 	{% block content %} {% endblock content %}
